@@ -8,7 +8,7 @@ module.exports = {
 
     const { error } = registerValidation(user);
 
-    if (error) return res.status(400).send(error.detailt[0].message);
+    if (error) return res.status(400).send(error.details[0].message);
 
     const UserExists = await User.findOne({
       username: user.username

@@ -1,0 +1,43 @@
+.login-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container form input {
+    margin-top: 12px;
+    border: 1px solid rgb(47, 116, 86);
+    border-radius: 4px;
+    height: 48px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #222;
+}
+
+.login-container form button, form Link button {
+    margin-top: 8px;
+    border: 0;
+    border-radius: 4px;
+    height: 48px;
+    font-size: 16px;
+    background: rgb(47, 116, 86);
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+}
+
+canvas {
+    display: block;
+    position: relative;
+    margin: auto;
+    -webkit-mask-image: -webkit-gradient(linear, left 0%, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)))
+}
