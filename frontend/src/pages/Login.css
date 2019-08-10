@@ -14,7 +14,7 @@
 
 .login-container form input {
     margin-top: 12px;
-    border: 1px solid rgb(47, 116, 86);
+    border: 1px solid #006837;
     border-radius: 4px;
     height: 48px;
     padding: 0 20px;
@@ -29,7 +29,7 @@
     border-radius: 4px;
     height: 48px;
     font-size: 16px;
-    background: rgb(47, 116, 86);
+    background: #006837;
     font-weight: bold;
     color: #FFF;
     cursor: pointer;

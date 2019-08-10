@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import api from "../services/api";
+import logo from "../assets/images/logo.svg";
 
 export default function Register({ history }) {
   const [username, setUsername] = useState("");
@@ -20,6 +21,7 @@ export default function Register({ history }) {
   return (
     <div className="login-container">
       <form onSubmit={register}>
+        <img src={logo} alt="Green Line" />
         <input
           placeholder="usario"
           value={username}
