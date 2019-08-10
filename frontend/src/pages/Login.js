@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { login as loginauth } from "../services/auth";
 import "./Login.css";
-import Canvas from "../components/Canvas";
+import logo from "../assets/images/logo.svg";
 
 import api from "../services/api";
 
@@ -26,6 +26,7 @@ export default function Login({ history }) {
   return (
     <div className="login-container">
       <form onSubmit={login}>
+        <img src={logo} alt="Green Line" />
         <input
           placeholder="usario"
           value={username}

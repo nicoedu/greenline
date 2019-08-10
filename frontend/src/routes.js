@@ -7,9 +7,9 @@ import {
 } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Main from "./pages/main";
 
 import { isAuthenticated } from "./services/auth";
+import ShopList from "./pages/ShopList";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -30,7 +30,7 @@ export default function Routes() {
   return (
     <Router>
       <Switch>
-        <PrivateRoute path="/" exact component={Main} />
+        <PrivateRoute path="/" exact component={ShopList} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
       </Switch>
